@@ -1,0 +1,22 @@
+# Есть список из трёх слов, которые вводит пользователь. Затем вводится сам текст произведения строго по словам.
+# Текст вводится до тех пор, пока не встретится слово end. Напишите программу, которая посчитает,
+# сколько раз слова пользователя встречаются в тексте.
+
+words_list = []
+counts = [0, 0, 0]
+
+for i in range(3):
+    print('Введите', i + 1, 'слово:', end = ' ')
+    word = input()
+    words_list.append(word)
+
+text = input('Слово из текста: ')
+while text != 'end':
+    for index in range(3):
+        if words_list[index] == text:
+            counts[index] += 1
+    text = input('Слово из текста: ')
+
+print('\nПодсчёт слов в тексте')
+for i in range(3):
+    print(words_list[i], ':', counts[i])
