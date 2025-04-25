@@ -1,4 +1,4 @@
-# TODO здесь писать код
+
 def sum_of_digits(number):
     sum = 0
     while number > 0:
