@@ -25,6 +25,6 @@ for char in string:
         count[1] += 1
 
 if count[0] > count[1]:
-    print(string.lower())
+    print('Результат: ', string.lower())
 else:
-    print(string.upper())
+    print('Результат: ', string.upper())
